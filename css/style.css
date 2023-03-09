@@ -933,7 +933,7 @@ body {
 .shop__list {
 	display: flex;
 	list-style-type: none;
-	width: 100%;
+	width: 100%;		
 	justify-content: center;
 	align-items: space-between;
 }
