@@ -446,8 +446,12 @@ body {
 	margin-top: 3.4rem;
 }
 
-.article-category:nth-child(n + 2){
+/*.article-category:nth-child(n + 2){
 	margin-left: 1.9rem;
+}*/
+
+.article-category {
+	margin-right: 1.9rem;
 }
 
 .article-category:hover {
@@ -536,6 +540,7 @@ body {
 	box-sizing: border-box;
 	list-style-type: none;
 	padding: 0;
+	flex-wrap: wrap;
 }
 
 .post-title {
@@ -597,7 +602,6 @@ body {
 
 .new-posts {
 	display: flex;
-	height: 49.4rem;
 	margin-top: 6rem;
 	width: 100%;
 	flex-wrap: wrap;
@@ -607,6 +611,7 @@ body {
 	width: 100%;
 	height: 3.6rem;
 	margin-left: 0.6rem;
+	margin-bottom: 1rem;
 }
 
 .sidebar__titles {
