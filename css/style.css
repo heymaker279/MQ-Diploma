@@ -659,8 +659,6 @@ body {
 	height: 7rem;
 	width: 7rem;
 	object-fit: cover;
-	object-position: center center;
-	z-index: 2;
 }
 
 .new-posts__article__data {
