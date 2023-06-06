@@ -9,31 +9,38 @@
 <body>
 	<header class="header">
 		<div class="banner">
-			<img class="banner__image" src="images/banner-bg.jpg" alt="Background image">
+			<img class="banner__image__desktop banner" src="images/banner-bg.jpg" alt="Background image">
+			<img class="banner__image__pad banner" src="images/banner-bg-tablet.jpg" alt="Background image">
+			<!-- <img class="banner__image__pad banner" src="Header.png" alt="Background image"> -->
+			<img class="banner__image__phone banner" src="images/banner-mobile.jpg" alt="Background image">
 		</div>
-		<nav class="menu">
-			<ul class="menu-list">
-				<li class="menu-list__item"><a href="" class="menu-link">
-					Главная
-				</a></li>
-				<li class="menu-list__item"><a href="" class="menu-link">
-					Посты
-				</a></li>
-				<li class="menu-list__item"><a href="" class="menu-link">
-					Статьи
-				</a></li>
-				<li class="menu-list__item"><a href="" class="menu-link">
-					Теги
-				</a></li>
-				<li class="menu-list__item"><a href="" class="menu-link">
-					Темы
-				</a></li>
-				<li class="menu-list__item"><a href="" class="menu-link">
-					Контакты
-				</a></li>
-			</ul>
-		</nav>
-		<img src="svg/noemi-logo.svg" alt="logo" class="logo-svg">
+		<div class="logo-menu">
+			<img src="svg/noemi-logo.svg" alt="logo" class="logo-svg">
+			<nav class="menu">
+				<label for="show-list" class="btn"></label>	
+				<input type="checkbox" id="show-list" class="show__list">
+				<ul class="menu-list">
+					<li class="menu-list__item"><a href="" class="menu-link">
+						Главная
+					</a></li>
+					<li class="menu-list__item"><a href="" class="menu-link">
+						Посты
+					</a></li>
+					<li class="menu-list__item"><a href="" class="menu-link">
+						Статьи
+					</a></li>
+					<li class="menu-list__item"><a href="" class="menu-link">
+						Теги
+					</a></li>
+					<li class="menu-list__item"><a href="" class="menu-link">
+						Темы
+					</a></li>
+					<li class="menu-list__item"><a href="" class="menu-link">
+						Контакты
+					</a></li>
+				</ul>
+			</nav>
+		</div>
 		<div class="intro">
 			<h1 class="header__title">
 				Блог о творчестве, спорте, и образе жизни
@@ -326,228 +333,229 @@
 				</li>
 			</ul>
 		</div>	
-		<aside class="sidebar">
-			<div class="new-posts">
-				<div class="new-posts__title">
-					<h4 class="new-posts__title__text sidebar__titles">Новые посты</h4>
-					<div class="new-posts__title__underline sidebar-underline">
-					</div>
-				</div>
-				<!-- <div class="new-posts__articles"> -->
-					<ul class="new-posts__articles">
-						<li class="new-posts__article__box">
-							<article class="new-posts__article">
-								<img src="images/2.jpg" alt="" class="new-posts__article__image">
-								<div class="new-posts__article__data">
-									<date class="new-posts__article__date" datetime="2019-06-14">
-										14 июня 2019
-									</date>
-									<a href="#0" class="new-posts__article__title">
-										10 мест, ради которых стоит проснуться
-									</a>
-								</div>
-							</article>
-						</li>
-						<li class="new-posts__article__box">
-							<article class="new-posts__article">
-								<img src="images/151.jpg" alt="" class="new-posts__article__image">
-								<div class="new-posts__article__data">
-									<date class="new-posts__article__date" datetime="2019-06-14">
-										14 июня 2019
-									</date>
-									<a href="#0" class="new-posts__article__title">			Йога для домашних
-									</a>
-								</div>
-							</article>
-						</li>
-						<li class="new-posts__article__box">
-							<article class="new-posts__article">
-								<img src="images/45.jpg" alt="" class="new-posts__article__image">
-								<div class="new-posts__article__data">
-									<date class="new-posts__article__date" datetime="2019-06-14">
-										14 июня 2019
-									</date>
-									<a href="#0" class="new-posts__article__title">
-										Как мы превратили классное место в балкон
-									</a>
-								</div>
-							</article>
-						</li>
-						<li class="new-posts__article__box">
-							<article class="new-posts__article">
-								<img src="images/501.jpg" alt="" class="new-posts__article__image">
-								<div class="new-posts__article__data">
-									<date class="new-posts__article__date" datetime="2019-06-14">
-										14 июня 2019
-									</date>
-									<a href="#0" class="new-posts__article__title">
-										Кулинарный подход к науке
-									</a>
-								</div>
-							</article>
-						</li>
-						<li class="new-posts__article__box">
-							<article class="new-posts__article">
-								<img src="images/7.jpg" alt="" class="new-posts__article__image">
-								<div class="new-posts__article__data">
-									<date class="new-posts__article__date" datetime="2019-06-14">
-										14 июня 2019
-									</date>
-									<a href="#0" class="new-posts__article__title">
-										Лучшие прически для распущенных волос
-									</a>
-								</div>
-							</article>
-						</li>
-					</ul>
-				<!-- </div> -->
-			</div>
-			<form class="search-row">
-				<input type="field" name="query" class="search-field field" placeholder="Найти..." required>
-				<button class="search-button button">
-					<img src="svg/search.svg" class="search-logo">
-				</button>
-			</form>
-			<div class="subscribe">
-				<div class="subscribe__title">
-					<h4 class="subscribe__title__text sidebar__titles">
-						Рассылка
-					</h4>
-					<div class="subscribe__title__underline sidebar-underline">
-					</div>
-				</div>
-				<form class="subscribe__email">
-					<input type="email" name="email" class="subscribe__email__field field" placeholder="Ваш email-адрес" required>
-					<button class="subscribe__email__button button">Подписаться</button>
-				</form>
-			</div>
-			<div class="tags">
-				<div class="tags__title">
-					<h4 class="tags__title__text sidebar__titles">
-						Теги
-					</h4>
-					<div class="tags__title__underline sidebar-underline"></div>
-				</div>
-				<ul class="tags__list">
-					<li class="tags__item">
-						<!-- <div class="tags__box"> -->
-							<a href="#0" class="tags__link">
-								Fashion
-							</a>
-						<!-- </div> -->
-					</li>
-					<li class="tags__item">
-						<!-- <div class="tags__box"> -->
-							<a href="#0" class="tags__link">
-								Music
-							</a>
-						<!-- </div> -->
-					</li>
-					<li class="tags__item">
-						<!-- <div class="tags__box">	 -->
-							<a href="#0" class="tags__link">
-								Lifestyle
-							</a>
-						<!-- </div> -->
-					</li>
-					<li class="tags__item">
-						<!-- <div class="tags__box"> -->
-							<a href="#0" class="tags__link">
-								Art
-							</a>
-						<!-- </div> -->
-					</li>
-					<li class="tags__item">
-						<!-- <div class="tags__box"> -->
-							<a href="#0" class="tags__link">
-								Interior
-							</a>
-						<!-- </div> -->
-					</li>
-					<li class="tags__item">
-						<!-- <div class="tags__box"> -->
-							<a href="#0" class="tags__link">
-								Travel
-							</a>
-						<!-- </div> -->
-					</li>
-					<li class="tags__item">
-						<!-- <div class="tags__box"> -->
-							<a href="#0" class="tags__link">
-								Food
-							</a>
-						<!-- </div> -->
-					</li>
-					<li class="tags__item">
-						<!-- <div class="tags__box"> -->
-							<a href="#0" class="tags__link">
-								Health
-							</a>
-						<!-- </div> -->
-					</li>
-				</ul>
-			</div>
-			<div class="themes">
-				<div class="themes__title">
-					<h4 class="themes__title__text sidebar__titles">
-						Темы
-					</h4> 	
-					<div class="themes__title_underline sidebar-underline">
-					</div>
-				</div>
-				<ul class="themes__list">
-					<li class="themes__item">
-						<a href="#0" class="themes__link">
-							Красота
-						</a>							
-						<span class="count__themes__contents">
-							12
-						</span>
-					</li>
-					<li class="themes__item">
-						<a href="#0" class="themes__link">
-							Здоровье
-						</a>
-						<span class="count__themes__contents">
-							4
-						</span>
-					</li>
-					<li class="themes__item">
-						<a href="#0" class="themes__link">
-							Образ жизни
-						</a>
-						<span class="count__themes__contents">
-							145
-						</span>
-					</li>
-					<li class="themes__item">
-						<a href="#0" class="themes__link">
-							Музыка
-						</a>
-						<span class="count__themes__contents">
-							28
-						</span>
-					</li>
-					<li class="themes__item">
-						<a href="#0" class="themes__link">
-							Спорт
-						</a>
-						<span class="count__themes__contents">
-								62
-						</span>
-					</li>
-					<li class="themes__item">
-						<a href="#0" class="themes__link">
-							Йога	
-						</a>
-						<span class="count__themes__contents">
-								8
-						</span>
-					</li>
-				</ul>
-			</div>
-		</aside>	
+		
 	</main>
+	<aside class="sidebar">
+		<div class="new-posts">
+			<div class="new-posts__title">
+				<h4 class="new-posts__title__text sidebar__titles">Новые посты</h4>
+				<div class="new-posts__title__underline sidebar-underline">
+				</div>
+			</div>
+			<!-- <div class="new-posts__articles"> -->
+				<ul class="new-posts__articles">
+					<li class="new-posts__article__box">
+						<article class="new-posts__article">
+							<img src="images/2.jpg" alt="" class="new-posts__article__image">
+							<div class="new-posts__article__data">
+								<date class="new-posts__article__date" datetime="2019-06-14">
+									14 июня 2019
+								</date>
+								<a href="#0" class="new-posts__article__title">
+									10 мест, ради которых стоит проснуться
+								</a>
+							</div>
+						</article>
+					</li>
+					<li class="new-posts__article__box">
+						<article class="new-posts__article">
+							<img src="images/151.jpg" alt="" class="new-posts__article__image">
+							<div class="new-posts__article__data">
+								<date class="new-posts__article__date" datetime="2019-06-14">
+									14 июня 2019
+								</date>
+								<a href="#0" class="new-posts__article__title">			Йога для домашних
+								</a>
+							</div>
+						</article>
+					</li>
+					<li class="new-posts__article__box">
+						<article class="new-posts__article">
+							<img src="images/45.jpg" alt="" class="new-posts__article__image">
+							<div class="new-posts__article__data">
+								<date class="new-posts__article__date" datetime="2019-06-14">
+									14 июня 2019
+								</date>
+								<a href="#0" class="new-posts__article__title">
+									Как мы превратили классное место в балкон
+								</a>
+							</div>
+						</article>
+					</li>
+					<li class="new-posts__article__box">
+						<article class="new-posts__article">
+							<img src="images/501.jpg" alt="" class="new-posts__article__image">
+							<div class="new-posts__article__data">
+								<date class="new-posts__article__date" datetime="2019-06-14">
+									14 июня 2019
+								</date>
+								<a href="#0" class="new-posts__article__title">
+									Кулинарный подход к науке
+								</a>
+							</div>
+						</article>
+					</li>
+					<li class="new-posts__article__box">
+						<article class="new-posts__article">
+							<img src="images/7.jpg" alt="" class="new-posts__article__image">
+							<div class="new-posts__article__data">
+								<date class="new-posts__article__date" datetime="2019-06-14">
+									14 июня 2019
+								</date>
+								<a href="#0" class="new-posts__article__title">
+									Лучшие прически для распущенных волос
+								</a>
+							</div>
+						</article>
+					</li>
+				</ul>
+			<!-- </div> -->
+		</div>
+		<form class="search-row">
+			<input type="field" name="query" class="search-field field" placeholder="Найти..." required>
+			<button class="search-button button">
+				<img src="svg/search.svg" class="search-logo">
+			</button>
+		</form>
+		<div class="subscribe">
+			<div class="subscribe__title">
+				<h4 class="subscribe__title__text sidebar__titles">
+					Рассылка
+				</h4>
+				<div class="subscribe__title__underline sidebar-underline">
+				</div>
+			</div>
+			<form class="subscribe__email">
+				<input type="email" name="email" class="subscribe__email__field field" placeholder="Ваш email-адрес" required>
+				<button class="subscribe__email__button button">Подписаться</button>
+			</form>
+		</div>
+		<div class="tags">
+			<div class="tags__title">
+				<h4 class="tags__title__text sidebar__titles">
+					Теги
+				</h4>
+				<div class="tags__title__underline sidebar-underline"></div>
+			</div>
+			<ul class="tags__list">
+				<li class="tags__item">
+					<!-- <div class="tags__box"> -->
+						<a href="#0" class="tags__link">
+							Fashion
+						</a>
+					<!-- </div> -->
+				</li>
+				<li class="tags__item">
+					<!-- <div class="tags__box"> -->
+						<a href="#0" class="tags__link">
+							Music
+						</a>
+					<!-- </div> -->
+				</li>
+				<li class="tags__item">
+					<!-- <div class="tags__box">	 -->
+						<a href="#0" class="tags__link">
+							Lifestyle
+						</a>
+					<!-- </div> -->
+				</li>
+				<li class="tags__item">
+					<!-- <div class="tags__box"> -->
+						<a href="#0" class="tags__link">
+							Art
+						</a>
+					<!-- </div> -->
+				</li>
+				<li class="tags__item">
+					<!-- <div class="tags__box"> -->
+						<a href="#0" class="tags__link">
+							Interior
+						</a>
+					<!-- </div> -->
+				</li>
+				<li class="tags__item">
+					<!-- <div class="tags__box"> -->
+						<a href="#0" class="tags__link">
+							Travel
+						</a>
+					<!-- </div> -->
+				</li>
+				<li class="tags__item">
+					<!-- <div class="tags__box"> -->
+						<a href="#0" class="tags__link">
+							Food
+						</a>
+					<!-- </div> -->
+				</li>
+				<li class="tags__item">
+					<!-- <div class="tags__box"> -->
+						<a href="#0" class="tags__link">
+							Health
+						</a>
+					<!-- </div> -->
+				</li>
+			</ul>
+		</div>
+		<div class="themes">
+			<div class="themes__title">
+				<h4 class="themes__title__text sidebar__titles">
+					Темы
+				</h4> 	
+				<div class="themes__title_underline sidebar-underline">
+				</div>
+			</div>
+			<ul class="themes__list">
+				<li class="themes__item">
+					<a href="#0" class="themes__link">
+						Красота
+					</a>							
+					<span class="count__themes__contents">
+						12
+					</span>
+				</li>
+				<li class="themes__item">
+					<a href="#0" class="themes__link">
+						Здоровье
+					</a>
+					<span class="count__themes__contents">
+						4
+					</span>
+				</li>
+				<li class="themes__item">
+					<a href="#0" class="themes__link">
+						Образ жизни
+					</a>
+					<span class="count__themes__contents">
+						145
+					</span>
+				</li>
+				<li class="themes__item">
+					<a href="#0" class="themes__link">
+						Музыка
+					</a>
+					<span class="count__themes__contents">
+						28
+					</span>
+				</li>
+				<li class="themes__item">
+					<a href="#0" class="themes__link">
+						Спорт
+					</a>
+					<span class="count__themes__contents">
+							62
+					</span>
+				</li>
+				<li class="themes__item">
+					<a href="#0" class="themes__link">
+						Йога	
+					</a>
+					<span class="count__themes__contents">
+							8
+					</span>
+				</li>
+			</ul>
+		</div>
+	</aside>	
 	<section class="shop">
 		<div class="shop__title">
 			<h4 class="shop__title__text">
